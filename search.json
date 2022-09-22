@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "",
+    "text": "Executable code version: v1.1.2."
+  },
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html#related-tools",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html#related-tools",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "1.1 Related tools",
+    "text": "1.1 Related tools\nExecutable notebooks exist in other languages (matlab, R, Julia, …), but Python is the most popular as per the TIOBE index. Crucially, Python provides an excellent fit for a broad set of activities in microsystems and hardware development, as this blog will demonstrate time and time again. See (Close 2021) for a relevant example of system modeling and analysis in Python.\nEven within the Python ecosystem, there are similar tools to Quarto. As usual with Python there are multiple ways to realize a task. For notebook publication, nbconvert and jupyterbook are established alternatives, and generate also publication-quality outputs."
+  },
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html#why-quarto",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html#why-quarto",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "1.2 Why Quarto ?",
+    "text": "1.2 Why Quarto ?\nQuarto stands out, aesthetically, with its is beautiful modern templates (for books, articles, course notes, blogs, …) out of the box. But they key differentiator is the built-in features for scholarly writing. In that specific niche, it is game changer.\nQuarto generates publication-quality articles in various scientific journal templates. See this link for the growing list of supported journal. Again, a single command is needed quarto use template <journal-name>. Blogs are also supported—this blog is built with Quarto. Even complete interactive website and course notes can be generated. See the course Practical Deep Learning for an extensive example, which was used as a pilot for porting Quarto into the Python ecosystem. This short video shows how a minimalistic operational website can be build from plain text and publish online for free in under 60 sec. In summary, Quarto is a battery-included publishing tool chain, with easy configuration and excelling at producing formal articles. See this curated list for additional Quarto resources."
+  },
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html#preview-of-this-article",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html#preview-of-this-article",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "1.3 Preview of this article",
+    "text": "1.3 Preview of this article\nThis article is a walk-through of the capabilities of Quarto. A fictitious data analysis, with data-rich tables and plots, is used to included to demonstrate the features. The sources and resulting PDF and interactive HTML are made available at Github for easy reproduction.\nWe introduce our Quarto workflow in Section 2. As usual with Python, there could be multiple other options. Section 3 quickly explains how to get started for scholarly writing. Section 4 is a basic data analysis to illustrate how Quarto executes the analysis code on the fly to produce the summary tables and plots. We also highlight the key advantages of publishing to an interactive HTML page, as opposed to a static PDF, enabling the reader to explore on its own the tables and plots. Finally, Section 5 compares side-by-side the PDF and the HTML and discuss the merits of each."
+  },
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html#vscode-extensions",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html#vscode-extensions",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "6.1 VSCode extensions",
+    "text": "6.1 VSCode extensions\nAny text editor can be used to edit the plain text files. That being said, VSCode provides an ideal environment for technical writing with Quarto. VSCode is natively well suited to develop Python code (executing code on the side, navigating the code base …). This article provides tips to get started with technical writing in VSCode (installing basic spell check, git integration, …). Then the Quarto VScode extension can trigger the Quarto rendering/previewing directly from the editor. Two extra extensions vscode-data-preview and gc-excelviewer allow the take a sneak preview at the data files (CSV or Excel files) directly from the editor. Thanks to above extensions, the technical writing productivity is supercharged into a different league with respect to traditional writing in Microsoft Word or Google Doc."
+  },
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html#exploratory-data-analysis-library",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html#exploratory-data-analysis-library",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "6.2 Exploratory data analysis library",
+    "text": "6.2 Exploratory data analysis library\n\nIn the above analysis, we quickly jumped into a dedicated analysis. In practice and for new dataset, it might be wiser to explore the dataset more thoroughly to get familiar with the data structure and correlation. The pandas-profiling library is ideal for first exploration. With a few lines of code, it generates an extensive report containing the histograms of values for each column, and the correlations between any pair of columns. The following code generates such a report.\n\n```{python}\nfrom pandas_profiling import ProfileReport\nprofile = ProfileReport(df, title=\"Pandas Profiling Report\")\nprofile.to_file(\"../../resources/profile-report.html\")\n```"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blogging about microsystems R&D",
+    "section": "",
+    "text": "Technical writing\n\n\n\n\nQuarto is a new publishing tool for Jupyter notebook, which streamlines the publication of data-rich interactive article. We provide here a walk-through of its capabilities using an illustrative data analysis example.\n\n\n\n\n\n\nSep 22, 2022\n\n\nGaël Close\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "author/author.html",
+    "href": "author/author.html",
+    "title": "Author",
+    "section": "",
+    "text": "Since 2021, he has been the Global Innovation Manager. He leads the development of novel sensors for emerging applications (robotics, wearable devices). In addition to hands-on product design, he has a keen interest in constantly expanding his toolbox of engineering and management methods—in particular system modeling, prototyping and lean product development.\nHe has published about 30 peer-reviewed publications in international journals and conferences, covering nano-electronic devices, circuit/system design, and sensor product development. He holds 4 patent, and is a IASCC Six Sigma Black Belt (2017).\n\nCV in PDF\n\n\nProfile on social networks\nResearch Gate | Google scholar |  https://orcid.org/0000-0002-5140-7789"
+  },
+  {
+    "objectID": "debug.html",
+    "href": "debug.html",
+    "title": "Debug page",
+    "section": "",
+    "text": "Basic plot\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInteractive plot\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\nTable\n\n\n/home/gcl/.venvs/personal-blog-3H1guWKd-py3.9/lib/python3.9/site-packages/pint_pandas/pint_array.py:648: UnitStrippedWarning:\n\nThe unit of the quantity is stripped when downcasting to ndarray.\n\n[0920/182741.487609:WARNING:sandbox_linux.cc(376)] InitializeSandbox() called with multiple threads in process gpu-process.\n[0920/182741.494498:WARNING:bluez_dbus_manager.cc(247)] Floss manager not present, cannot set Floss enable/disable.\n\n\n[0920/182741.624116:INFO:headless_shell.cc(660)] Written to file /tmp/tmp1u1jovi6/temp.png.\n\n\n\n\n\nA styled dataframe\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "objectID": "posts/2209-tech-writing/2209-tech-writing.html#technical-writing-elements",
+    "href": "posts/2209-tech-writing/2209-tech-writing.html#technical-writing-elements",
+    "title": "Technical Writing and Publishing Data-Rich Articles with Quarto",
+    "section": "3.1 Technical writing elements",
+    "text": "3.1 Technical writing elements\nQuarto, like many other Markdown-based tools, handles naturally the usual technical writing elements. Figures, tables (see Table 1), in-line equation (e.g. \\(r=\\sqrt{x^2+y^2}\\)), block equations, and code listings are all supported. These are the core building blocks of technical writing.\n\n\n\n\nTable 1: Table of sensor parameters\n\n\n\n\n\n\n\n\n\n\n\nParameter\nSymbol\nMin\nTyp\nMax\nUnit\nConditions\n\n\n\n\nSupply current\n\\(i_\\text{off}\\)\n-\n-\n10\nmA\nIn high-speed mode\n\n\nHall sensitivity\n\\(S_\\text{H}\\)\n0.2\n-\n-\nV/T\n-\n\n\nEffective number of bits\n\\(\\text{ENOB}\\)\n12\n-\n-\n-\nAt bandwidth = 1 kHz\n\n\n\n\nBlock of Latex-formatted equations are also supported.\n\\[\n\\begin{aligned}\\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} & = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\   \\nabla \\cdot \\vec{\\mathbf{E}} & = 4 \\pi \\rho \\\\\\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} & = \\vec{\\mathbf{0}} \\\\\\nabla \\cdot \\vec{\\mathbf{B}} & = 0 \\end{aligned}\n\\tag{1}\\]\nThese elements are part of basic Markdown, and not specific to Quarto. On the other end, captions and cross-references (such as Table 1, Equation 1) are not part of basic Markdown. Quarto supports them out of the box, along with other features for scholarly writing, such as title block, appendices, and metadata to make the article citeable."
+  }
+]
