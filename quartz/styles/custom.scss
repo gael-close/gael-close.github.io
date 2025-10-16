@@ -1,0 +1,18 @@
+@use "./base.scss";
+
+// Custom classes for images in markdown
+
+.float-right {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.float-left {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a img + svg {
+  display: none !important;
+}
