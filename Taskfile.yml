@@ -1,0 +1,22 @@
+version: '3'
+
+vars:
+  BLOG_DIR: $BR2/Personal/Blog
+
+tasks:
+  export:
+    desc: Export content to Brain2 for broad accessibility via symlinks
+    cmds:
+      - gln -rfs figs/*.png {{.BLOG_DIR}}/figs
+      - gln -rfs *.md {{.BLOG_DIR}}/
+    dir: site
+
+  pub:
+    desc: "Publish to github by committing a new version of the website"
+    cmds:
+      - git add .
+      - git commit -m "Release from script"
+      - git push
+    
+
+

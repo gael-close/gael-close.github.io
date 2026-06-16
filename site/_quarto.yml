@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _build
+  execute-dir: project
+  resources:
+    - googledd79e90b1ac6d745.html
+    - robots.txt
+    - assets/
+
+title-block-banner: false
+title-block-style: default
+website:
+  title: "Gaël Close's Website"
+  description: "Sensor innovation and engineering management"
+  site-url: "https://gael-close.github.io/"
+
+  
+  navbar:
+    title: "Gaël Close's Website"
+    search: true
+    right:
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/gael-close-4345a926"
+      - icon: github
+        href: "https://github.com/gael-close"
+      - icon: google
+        href: "https://scholar.google.ch/citations?user=xebSVGIAAAAJ"
+
+  sidebar:
+    style: docked
+    background: light
+    collapse-level: 2
+    contents:
+      - text: "Home"
+        href: index.qmd
+        icon: house
+      - text: "Author"
+        href: Author.md
+        icon: person
+      - text: "Publication Lists"
+        href: Publication Lists.md
+        icon: file-text
+
+  page-footer:
+    left: "© 2026 Gaël Close"
+    right: "Last build: {{< now >}}"
+
+format:
+  bookup-html+darkonly:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    number-sections: false
+    smooth-scroll: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

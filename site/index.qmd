@@ -1,0 +1,10 @@
+---
+title: "Welcome"
+subtitle: "Sensor Innovation and Engineering Management"
+listing:
+  contents: 
+    - "*.md"  
+  type: default     
+  sort: "date desc"
+  fields: [image, title, description]
+---
