@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gael-close.github.io/Author.html</loc>
-    <lastmod>2026-06-16T07:06:54.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gael-close.github.io/Publication Lists.html</loc>
-    <lastmod>2026-06-16T07:12:36.321Z</lastmod>
+    <loc>https://gael-close.github.io/pages/Author.html</loc>
+    <lastmod>2026-07-13T10:38:19.740Z</lastmod>
   </url>
   <url>
     <loc>https://gael-close.github.io/index.html</loc>
-    <lastmod>2026-06-16T06:43:04.953Z</lastmod>
+    <lastmod>2026-07-13T10:34:13.474Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gael-close.github.io/pages/Publication Lists.html</loc>
+    <lastmod>2026-07-13T10:40:29.640Z</lastmod>
   </url>
 </urlset>

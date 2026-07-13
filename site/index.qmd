@@ -3,7 +3,7 @@ title: "Welcome"
 subtitle: "Sensor Innovation and Engineering Management"
 listing:
   contents: 
-    - "*.md"  
+    - "pages/*.md"  
   type: default     
   sort: "date desc"
   fields: [image, title, description]

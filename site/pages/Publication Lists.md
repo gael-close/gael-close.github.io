@@ -4,7 +4,7 @@ date: 2026-06-15
 abstract: |
     This is a list of publications by Gaël Close,
     covering both peer-reviewed and informal papers.
-image: figs/gcl-pubs.png
+image: ../figs/gcl-pubs.png
 ---
 
 # Journal and conference papers

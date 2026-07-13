@@ -35,10 +35,10 @@ website:
         href: index.qmd
         icon: house
       - text: "Author"
-        href: Author.md
+        href: pages/Author.md
         icon: person
       - text: "Publication Lists"
-        href: Publication Lists.md
+        href: pages/Publication Lists.md
         icon: file-text
 
   page-footer:
