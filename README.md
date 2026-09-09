@@ -11,9 +11,9 @@ The website, ready to be distributed, is built in the [dist/ folder](dist/index.
 
 ```bash
 # Temporary server for preview
-quarto preview site
+quarto preview docs
 # Full render
-quarto render site
+quarto render docs
 ```
 
 ## Publication on Github pages
